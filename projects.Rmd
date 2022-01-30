@@ -1,0 +1,15 @@
+---
+title: "Tutorials and miscellanea"
+output:
+  distill::distill_article:
+    self_contained: false
+site: distill::distill_website
+css: [theme.css]
+listing: posts
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+

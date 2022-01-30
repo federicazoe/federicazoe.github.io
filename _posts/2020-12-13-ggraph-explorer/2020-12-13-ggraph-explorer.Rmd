@@ -1,0 +1,37 @@
+---
+title: "ggraph explorer"
+description: |
+  A Shiny App for showcasing network visualizations with ggraph
+author: 
+  - name: Federica Zoe Ricci
+date: "12/13/2020"
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: false
+    css: ../../theme.css
+preview: ../../img/lotr_no_opt.jpg
+draft: false
+tags: [shiny app, networks, visualization]
+categories:
+  - Shiny app
+  - Networks
+  - Visualization
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<h2> Network visualization <a href='https://federica-zoe-ricci.shinyapps.io/ggraph-explorer/'><i class='fab fa-wpexplorer'></i></a> </h2>
+
+This Shiny app, created in collaboration with [Rachel Longjohn](https://github.com/rlongjohn) and [Wendy Rummerfield](https://github.com/wendyrummer13), will let you play around with some functions from the package <a href='https://cran.r-project.org/web/packages/ggraph/index.html' target="_blank"> <font face = "courier">ggraph</font> </a> 
+- a package created by [Thomas Lin Pedersen](https://github.com/thomasp85) for plotting graphs and networks based on the Grammar of Graphics. 
+
+
+We have downloaded from the web a dataset of [Game of Thrones](https://bigdata.duke.edu/projects/social-network-analysis-basics-case-studies-game-thrones-and-national-hockey-league), of 
+[Harry Potter](https://github.com/efekarakus/potter-network) and of [The Lord of the Rings](https://rdrr.io/github/schochastics/networkdata/man/movie_439.html). The app displays a default network that we have created for each of those datasets and allows the user to modify certain plotting options, such as the layout (i.e. the way that existing nodes and edges are mapped to vertical and horizontal placement on the plot), the size, shape and color of the nodes and of their labels, the style and the width of the edges. The code used to generate the plot is also displayed on a dedicated tab, and updates automatically in response to how the user customizes the plot. Dedicated tabs also allow to see the underlining data tables of nodes and edges.
+
+The code for the app is available on <a href='https://github.com/federicazoe/ggraph-explorer' target="_blank"> GitHub</a>.
+
+The concept of ggraph explorer and its name were inspired by the Shiny app [ggplot explorer](http://databall.co/shiny/shinyggplot/). 

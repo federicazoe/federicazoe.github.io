@@ -1,0 +1,40 @@
+---
+title: "Research"
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    css: ../../theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Research Interests
+
+
+<p> I am interested in the development and application of Bayesian Nonparametric models, especially for clustering, analysis of time series and for the modeling of network data. I am currently working on my first research project  under the supervision of professors <a href='http://www.micheleguindani.info/' target="_blank">Michele Guindani</a> and <a href='https://www.ics.uci.edu/~sudderth/' target="_blank">Erik Sudderth</a>, and I plan to advance to candidacy by Summer 2022. </p>
+
+<p> Due to my varied background, I am enthusiastic about working with researchers in other fields. So far, I have collaborated with academic projects in the field of Behavioral Sciences (see below) but in the future I would love to contribute to projects in the fields of  Anthropology, Economics and Sociology. </p>
+
+### Refereed publications
+
+#### Statistical methodology
+
+<p> <i class='fa fa-file-alt'></i> &nbsp; **Federica Zoe Ricci**, Michele Guindani, Erik Sudderth (in preparation). Thinned random measures for sparse graphs with overlapping communities. </p> 
+
+#### Collaborations in other fields
+
+<p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Luisa Torri (2021). <a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank"> A three-year longitudinal study on the use of pre-ordering in a university canteen </a>, _Appetite_</i> </p>
+
+<p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Francesco Denti, Derenik Haghverdian, Luisa Torri (2022). Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen, _Appetite_ (revise and resubmit) </p> 
+
+###  Non-refereed work
+
+#### Bayesian Nonparametrics
+
+* _A Sticky Hierarchical Pitman-Yor Process as a Prior for Hidden Markov Models_, MSc Thesis, 2019 advised by <a href='http://mypage.unibocconi.it/antoniolijoi/' target="_blank">Antonio Lijoi</a>, <a href='https://www.bayeslab.unibocconi.eu/wps/wcm/connect/Cdr/Bayeslab/Home' target=_blank">Bocconi University</a>
+
+
+

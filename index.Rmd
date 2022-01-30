@@ -1,0 +1,24 @@
+---
+title: "Welcome."
+description: |
+site: distill::distill_website
+---
+
+<img src="img/me_paris_medium.jpeg" alt="a picture of myself smiling in front of an old blue wooden gate" width="200" align='center'/> 
+
+<p> I am a third year PhD Student in the <b> Department of Statistics </b> at <a href = 'https://www.stat.uci.edu/' target="_blank"> <b> UC Irvine </b> </a>. </p>
+
+<p> I am currently working on a dissertation proposal in Bayesian Nonparametrics, under the supervision of <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b>. </a> </p>
+
+<p> I am interested in applications of statistics to classification tasks, network analysis and recommendation systems. I also enjoy working on projects related to statistical education. </p> 
+
+<p> I love learning about other cultures and traveling. </p>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# When the website will be ready, take a look at how to publish to GitHub Pages:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+

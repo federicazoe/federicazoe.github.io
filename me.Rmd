@@ -1,0 +1,11 @@
+---
+title: "About me "
+description: |
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+The earliest part of my education was humanity-oriented, but I have also always liked math. And I have always loved learning. I found myself enthusiastic of disparate disciplines that I studied along the path (e.g. philosophy, anthropology, contemporary sculpture - but also micro and macroeconomics, public law, game theory). At some point I understood I was best fit for a career in a quantitative field. And after finding Bayesian statistics, I understood that's the direction I wanted to go. 

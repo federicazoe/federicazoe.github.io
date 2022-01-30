@@ -1,0 +1,11 @@
+---
+title: "Resume"
+description: |
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<a href="cv/my-cv-hyndman.pdf" title="download pdf">
+<img src="cv/my-cv-hyndman.jpg" alt="an image of my curriculum vitae" width="650" align='center'/> </a>
