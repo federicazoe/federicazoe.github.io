@@ -28,7 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Luisa Torri (2021). <a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank"> A three-year longitudinal study on the use of pre-ordering in a university canteen </a>, _Appetite_</i> </p>
 
-<p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Francesco Denti, Derenik Haghverdian, Luisa Torri (2022). Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen, _Appetite_ (revise and resubmit) </p> 
+<p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Francesco Denti, Derenik Haghverdian, Luisa Torri (2022). Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen, _Appetite_ (accepted) </p> 
 
 ###  Non-refereed work
 
