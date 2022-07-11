@@ -14,9 +14,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Research Interests
 
 
-<p> I am interested in the development and application of Bayesian Nonparametric models, especially for clustering, analysis of time series and for the modeling of network data. I am currently working on my first research project  under the supervision of professors <a href='http://www.micheleguindani.info/' target="_blank">Michele Guindani</a> and <a href='https://www.ics.uci.edu/~sudderth/' target="_blank">Erik Sudderth</a>, and I plan to advance to candidacy by Summer 2022. </p>
+<p> I am interested in the development and application of Bayesian Nonparametric models, especially for clustering, analysis of time series and for the modeling of network data. My first research project, under the supervision of professors <a href='https://www.ics.uci.edu/~sudderth/' target="_blank">Erik Sudderth</a> and <a href='http://www.micheleguindani.info/' target="_blank">Michele Guindani</a>, is on a model for sparse network data with mixed community memberships.</p>
 
-<p> Due to my varied background, I am enthusiastic about working with researchers in other fields. So far, I have collaborated with academic projects in the field of Behavioral Sciences (see below) but in the future I would love to contribute to projects in the fields of  Anthropology, Economics and Sociology. </p>
+<p> In light of my varied background, I am enthusiastic about working with researchers in other fields. I have collaborated to academic research in the field of Behavioral Sciences and Earth Sciences and in the future I would love to contribute to projects in the fields of Anthropology, Economics and Sociology. </p>
 
 ### Refereed publications
 
@@ -24,15 +24,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <p> <i class='fa fa-file-alt'></i> &nbsp; **Federica Zoe Ricci**, Michele Guindani, Erik Sudderth (in preparation). Thinned random measures for sparse graphs with overlapping communities. </p> 
 
+#### Statistics and data science education
+
+<p> <i class='fa fa-file-alt'></i> &nbsp; Wendy Rummerfield, **Federica Zoe Ricci**, Mine Dogucu (2021). Training Graduate Students to Teach Statistics and Data Science from a Distance, _IASE 2021_ </p> 
+
 #### Collaborations in other fields
 
 <p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Luisa Torri (2021). <a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank"> A three-year longitudinal study on the use of pre-ordering in a university canteen </a>, _Appetite_</i> </p>
 
-<p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Francesco Denti, Derenik Haghverdian, Luisa Torri (2022). Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen, _Appetite_ (accepted) </p> 
+<p> <i class='fa fa-file-alt'></i> &nbsp; Riccardo Migliavada, **Federica Zoe Ricci**, Francesco Denti, Derenik Haghverdian, Luisa Torri (2022). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0195666322000861" target="_blank"> Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen </a>, _Appetite_  </p> 
 
 ###  Non-refereed work
 
-#### Bayesian Nonparametrics
+* _Assisted grading with Gradescope_, Blog post, co-authored with M. Dogucu on <a href='https://www.datapedagogy.com/posts/2021-08-12-assisted-grading-with-gradescope/' target="_blank"> datapedagogy.com </a>
+
+* _Tips and Tools for Asynchronous Class Videos_, co-authored with M. Dogucu and W. Rummerfield, on <a href='https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/
+' target="_blank"> datapedagogy.com </a>
+
+* _Engaging Students in Remote Classes_, Blog post, co-authored with M. Dogucu and W. Rummerfield, on <a href='https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/' target="_blank"> datapedagogy.com </a>
 
 * _A Sticky Hierarchical Pitman-Yor Process as a Prior for Hidden Markov Models_, MSc Thesis, 2019 advised by <a href='http://mypage.unibocconi.it/antoniolijoi/' target="_blank">Antonio Lijoi</a>, <a href='https://www.bayeslab.unibocconi.eu/wps/wcm/connect/Cdr/Bayeslab/Home' target=_blank">Bocconi University</a>
 

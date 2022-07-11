@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,17 +74,18 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Federica Zoe Ricci: Research</title>
@@ -452,7 +454,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -765,10 +767,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1600,7 +1598,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1611,6 +1618,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1710,6 +1742,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1732,7 +1766,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2161,7 +2195,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2242,29 +2276,77 @@ About
 </div>
 <h3 id="research-interests">Research Interests</h3>
 <p>
-I am interested in the development and application of Bayesian Nonparametric models, especially for clustering, analysis of time series and for the modeling of network data. I am currently working on my first research project under the supervision of professors <a href='http://www.micheleguindani.info/' target="_blank">Michele Guindani</a> and <a href='https://www.ics.uci.edu/~sudderth/' target="_blank">Erik Sudderth</a>, and I plan to advance to candidacy by Summer 2022.
+I am interested in the development and application of Bayesian
+Nonparametric models, especially for clustering, analysis of time series
+and for the modeling of network data. My first research project, under
+the supervision of professors
+<a href='https://www.ics.uci.edu/~sudderth/' target="_blank">Erik
+Sudderth</a> and
+<a href='http://www.micheleguindani.info/' target="_blank">Michele
+Guindani</a>, is on a model for sparse network data with mixed community
+memberships.
 </p>
 <p>
-Due to my varied background, I am enthusiastic about working with researchers in other fields. So far, I have collaborated with academic projects in the field of Behavioral Sciences (see below) but in the future I would love to contribute to projects in the fields of Anthropology, Economics and Sociology.
+In light of my varied background, I am enthusiastic about working with
+researchers in other fields. I have collaborated to academic research in
+the field of Behavioral Sciences and Earth Sciences and in the future I
+would love to contribute to projects in the fields of Anthropology,
+Economics and Sociology.
 </p>
 <h3 id="refereed-publications">Refereed publications</h3>
 <h4 id="statistical-methodology">Statistical methodology</h4>
 <p>
-<i class='fa fa-file-alt'></i>   <strong>Federica Zoe Ricci</strong>, Michele Guindani, Erik Sudderth (in preparation). Thinned random measures for sparse graphs with overlapping communities.
+<i class='fa fa-file-alt'></i>   <strong>Federica Zoe Ricci</strong>,
+Michele Guindani, Erik Sudderth (in preparation). Thinned random
+measures for sparse graphs with overlapping communities.
 </p>
-<h4 id="collaborations-in-other-fields">Collaborations in other fields</h4>
+<h4 id="statistics-and-data-science-education">Statistics and data
+science education</h4>
 <p>
-<i class='fa fa-file-alt'></i>   Riccardo Migliavada, <strong>Federica Zoe Ricci</strong>, Luisa Torri (2021). <a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank"> A three-year longitudinal study on the use of pre-ordering in a university canteen </a>, <em>Appetite</em></i>
+<i class='fa fa-file-alt'></i>   Wendy Rummerfield, <strong>Federica Zoe
+Ricci</strong>, Mine Dogucu (2021). Training Graduate Students to Teach
+Statistics and Data Science from a Distance, <em>IASE 2021</em>
+</p>
+<h4 id="collaborations-in-other-fields">Collaborations in other
+fields</h4>
+<p>
+<i class='fa fa-file-alt'></i>   Riccardo Migliavada, <strong>Federica
+Zoe Ricci</strong>, Luisa Torri (2021).
+<a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank">
+A three-year longitudinal study on the use of pre-ordering in a
+university canteen </a>, <em>Appetite</em></i>
 </p>
 <p>
-<i class='fa fa-file-alt'></i>   Riccardo Migliavada, <strong>Federica Zoe Ricci</strong>, Francesco Denti, Derenik Haghverdian, Luisa Torri (2022). Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen, <em>Appetite</em> (accepted)
+<i class='fa fa-file-alt'></i>   Riccardo Migliavada, <strong>Federica
+Zoe Ricci</strong>, Francesco Denti, Derenik Haghverdian, Luisa Torri
+(2022).
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0195666322000861" target="_blank">
+Is purchasing of vegetable dishes affected by organic or local labels?
+Empirical evidence from a university canteen </a>, <em>Appetite</em>
 </p>
 <h3 id="non-refereed-work">Non-refereed work</h3>
-<h4 id="bayesian-nonparametrics">Bayesian Nonparametrics</h4>
 <ul>
-<li><em>A Sticky Hierarchical Pitman-Yor Process as a Prior for Hidden Markov Models</em>, MSc Thesis, 2019 advised by <a href='http://mypage.unibocconi.it/antoniolijoi/' target="_blank">Antonio Lijoi</a>, <a href='https://www.bayeslab.unibocconi.eu/wps/wcm/connect/Cdr/Bayeslab/Home' target=_blank">Bocconi University</a></li>
+<li><p><em>Assisted grading with Gradescope</em>, Blog post, co-authored
+with M. Dogucu on
+<a href='https://www.datapedagogy.com/posts/2021-08-12-assisted-grading-with-gradescope/' target="_blank">
+datapedagogy.com </a></p></li>
+<li><p><em>Tips and Tools for Asynchronous Class Videos</em>,
+co-authored with M. Dogucu and W. Rummerfield, on
+<a href='https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/
+' target="_blank"> datapedagogy.com </a></p></li>
+<li><p><em>Engaging Students in Remote Classes</em>, Blog post,
+co-authored with M. Dogucu and W. Rummerfield, on
+<a href='https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/' target="_blank">
+datapedagogy.com </a></p></li>
+<li><p><em>A Sticky Hierarchical Pitman-Yor Process as a Prior for
+Hidden Markov Models</em>, MSc Thesis, 2019 advised by
+<a href='http://mypage.unibocconi.it/antoniolijoi/' target="_blank">Antonio
+Lijoi</a>,
+<a href='https://www.bayeslab.unibocconi.eu/wps/wcm/connect/Cdr/Bayeslab/Home' target=_blank">Bocconi
+University</a></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2280,7 +2362,9 @@ Due to my varied background, I am enthusiastic about working with researchers in
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>© Copyright 2020 Federica Zoe Ricci • fzricci@uci.edu • Website template is by <a href="https://distill.pub/about/">Distill.pub</a> and <a href="https://www.rstudio.com">RStudio, Inc</a></p>
+<p>© Copyright 2020 Federica Zoe Ricci • fzricci@uci.edu • Website
+template is by <a href="https://distill.pub/about/">Distill.pub</a> and
+<a href="https://www.rstudio.com">RStudio, Inc</a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

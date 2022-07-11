@@ -76,16 +76,15 @@ Below is a list of courses that I have been a TA for at UC Irvine.
 
 ### Tasks
 
-Some examples of the work that I have done:
+Examples of work I have done:
 
 <ul class="compact">
- <li>  creating exams, homework and quizzes </li> 
- <li>  preparing detailed answer keys </li>
- <li>  assigning grades and personalized feedback </li>
  <li>  holding office hours and lab sessions </li>
- <li>  maintaining active and regular communication with students </li>
- <li>  recording and editing educational videos </li>
-</ul>
+ <li>  making educational videos </li>
+ <li>  curating online discussion spaces </li>
+ <li>  creating exams and quizzes </li> 
+ <li>  assigning grades and personalized feedback </li>
+</ul> 
 
 ### Tools
 
@@ -109,24 +108,4 @@ Some of the tools that I have worked with:
 
 * At the end of my first year as a PhD student, I received an honorable mention as best TA of the year in the Department of Statistics at UCI.
 
-* In the summer 2020, I was selected for the [Division of Teaching Excellence and Innovation Summer Fellowship](https://dtei.uci.edu/call-for-dtei-graduate-fellows/). As a DTEI fellow, I worked with [Dr. Dogucu](https://mdogucu.ics.uci.edu//index.html) on remote-learning related topics, such as [students' engagement](https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/) in remote classes and [video editing](https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/).
-
-
-### Publications
-
-#### Refereed articles
-
-<p> <i class='fa fa-file-alt'></i> &nbsp; Wendy Rummerfield, **Federica Zoe Ricci**, Mine Dogucu (2021). Training Graduate Students to Teach Statistics and Data Science from a Distance, _IASE 2021_ </p> 
-
-<p> <i class='fa fa-file-alt'></i> &nbsp; Mine Cetinkaya-Rundel, Tiffany Timbers, Mine Dogucu, Colin Rundel, **Federica Zoe Ricci**, (in preparation). Auto-feedback </p> 
-
-#### Blog posts
-
-* _Assisted grading with Gradescope_, Blog post, co-authored with M. Dogucu on <a href='https://www.datapedagogy.com/posts/2021-08-12-assisted-grading-with-gradescope/' target="_blank"> datapedagogy.com </a>
-
-* _Tips and Tools for Asynchronous Class Videos_, co-authored with M. Dogucu and W. Rummerfield, on <a href='https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/
-' target="_blank"> datapedagogy.com </a>
-
-* _Engaging Students in Remote Classes_, Blog post, co-authored with M. Dogucu and W. Rummerfield, on <a href='https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/' target="_blank"> datapedagogy.com </a>
-
-
+* In summer 2020, I was selected for the [Division of Teaching Excellence and Innovation Summer Fellowship](https://dtei.uci.edu/call-for-dtei-graduate-fellows/). As a DTEI fellow, I worked with [Dr. Dogucu](https://mdogucu.ics.uci.edu//index.html) on topics relevant to remote-learning, such as [students' engagement](https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/) in remote classes and [video editing](https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/).
