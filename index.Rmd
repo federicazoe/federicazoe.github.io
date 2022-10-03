@@ -8,7 +8,7 @@ site: distill::distill_website
 
 <p> I am a third year PhD candidate in the <b> Department of Statistics </b> at the <a href = 'https://www.stat.uci.edu/' target="_blank"> <b> University of California Irvine </b> </a>. </p>
 
-<p> My PhD research focuses on <b> Bayesian Nonparametric </b> models and I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b>. </a> I am interested in the analysis of network data, in classification tasks and recommendation systems. </p> 
+<p> My PhD research focuses on <b> Bayesian Nonparametric models </b> and I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b>. </a> I am interested in the analysis of network data, in classification tasks and recommendation systems. </p> 
 
 <p> I enjoy working on projects related to <b> statistics and data science education </b> and I have created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science teachers with grading and providing feedback to their students. </p>
 

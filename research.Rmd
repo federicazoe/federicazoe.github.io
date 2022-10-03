@@ -22,11 +22,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### Statistical methodology
 
-<p> <i class='fa fa-file-alt'></i> &nbsp; **Federica Zoe Ricci**, Michele Guindani, Erik Sudderth (in preparation). Thinned random measures for sparse graphs with overlapping communities. </p> 
+<p> <i class='fa fa-file-alt'></i> &nbsp; **Federica Zoe Ricci**, Michele Guindani, Erik Sudderth. Thinned random measures for sparse graphs with overlapping communities, _Neural Information Processing Systems_ (forthcoming). </p> 
 
 #### Statistics and data science education
 
-<p> <i class='fa fa-file-alt'></i> &nbsp; Wendy Rummerfield, **Federica Zoe Ricci**, Mine Dogucu (2021). Training Graduate Students to Teach Statistics and Data Science from a Distance, _IASE 2021_ </p> 
+<p> <i class='fa fa-file-alt'></i> &nbsp; Wendy Rummerfield, **Federica Zoe Ricci**, Mine Dogucu (2021). <a href="https://iase-web.org/documents/papers/sat2021/IASE2021%20Satellite%20116_RUMMERFIELD.pdf?1649974209" target="_blank"> Training Graduate Students to Teach Statistics and Data Science from a Distance </a>, _IASE 2021_ </p> 
 
 #### Collaborations in other fields
 
