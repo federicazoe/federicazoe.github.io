@@ -23,9 +23,9 @@ categories:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<h2> Network visualization <a href='https://federica-zoe-ricci.shinyapps.io/ggraph-explorer/'><i class='fab fa-wpexplorer'></i></a> </h2>
+<h2> <a href='https://federica-zoe-ricci.shinyapps.io/ggraph-explorer/'> Network visualization  <i class='fab fa-wpexplorer'></i> </a> </h2>
 
-This Shiny app, created in collaboration with [Rachel Longjohn](https://github.com/rlongjohn) and [Wendy Rummerfield](https://github.com/wendyrummer13), will let you play around with some functions from the package <a href='https://cran.r-project.org/web/packages/ggraph/index.html' target="_blank"> <font face = "courier">ggraph</font> </a> 
+<a href='https://federica-zoe-ricci.shinyapps.io/ggraph-explorer/'> This Shiny app </a>, created in collaboration with [Rachel Longjohn](https://github.com/rlongjohn) and [Wendy Rummerfield](https://github.com/wendyrummer13), will let you play around with some functions from the package <a href='https://cran.r-project.org/web/packages/ggraph/index.html' target="_blank"> <font face = "courier">ggraph</font> </a> 
 - a package created by [Thomas Lin Pedersen](https://github.com/thomasp85) for plotting graphs and networks based on the Grammar of Graphics. 
 
 
