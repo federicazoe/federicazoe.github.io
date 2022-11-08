@@ -20,19 +20,19 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -50,40 +50,42 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #545454; font-weight: bold; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #a1024a; } /* BaseN */
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007faa; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #008000; } /* Char */
-code span.cn { color: #d91e18; } /* Constant */
-code span.co { color: #545454; } /* Comment */
-code span.cv { color: #545454; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #aa5d00; } /* DataType */
-code span.dv { color: #a1024a; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #a1024a; } /* Float */
-code span.fu { color: #4254a7; } /* Function */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #545454; font-weight: bold; } /* Information */
-code span.kw { color: #007faa; font-weight: bold; } /* Keyword */
-code span.op { color: #696969; } /* Operator */
-code span.ot { color: #007faa; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #008000; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #008000; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #008000; } /* VerbatimString */
-code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warning */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
 <title>Federica Zoe Ricci: ggraph explorer</title>
@@ -117,7 +119,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["2020-12-13-ggraph-explorer_files/anchor-4.2.2/anchor.min.js","2020-12-13-ggraph-explorer_files/bowser-1.9.3/bowser.min.js","2020-12-13-ggraph-explorer_files/distill-2.2.21/template.v2.js","2020-12-13-ggraph-explorer_files/jquery-1.11.3/jquery.min.js","2020-12-13-ggraph-explorer_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["2020-12-13-ggraph-explorer_files/anchor-4.2.2/anchor.min.js","2020-12-13-ggraph-explorer_files/bowser-1.9.3/bowser.min.js","2020-12-13-ggraph-explorer_files/distill-2.2.21/template.v2.js","2020-12-13-ggraph-explorer_files/header-attrs-2.14/header-attrs.js","2020-12-13-ggraph-explorer_files/jquery-1.11.3/jquery.min.js","2020-12-13-ggraph-explorer_files/jquery-3.6.0/jquery-3.6.0.js","2020-12-13-ggraph-explorer_files/jquery-3.6.0/jquery-3.6.0.min.js","2020-12-13-ggraph-explorer_files/jquery-3.6.0/jquery-3.6.0.min.map","2020-12-13-ggraph-explorer_files/popper-2.6.0/popper.min.js","2020-12-13-ggraph-explorer_files/tippy-6.2.7/tippy-bundle.umd.min.js","2020-12-13-ggraph-explorer_files/tippy-6.2.7/tippy-light-border.css","2020-12-13-ggraph-explorer_files/tippy-6.2.7/tippy.css","2020-12-13-ggraph-explorer_files/tippy-6.2.7/tippy.umd.min.js","2020-12-13-ggraph-explorer_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -463,7 +465,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -776,10 +778,6 @@ figure img.external {
   position: relative;
   margin-bottom: 2.5em;
   margin-top: 1.5em;
-}
-
-.figure img {
-  width: 100%;
 }
 
 .figure .caption {
@@ -1611,7 +1609,16 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+        var fn = $(this).children()[0]
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -1622,6 +1629,31 @@ function init_distill() {
         placement: 'bottom-start'
       });
     });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
 
     // clear polling timer
     clearInterval(tid);
@@ -1721,6 +1753,8 @@ function init_common() {
   // mark non-body figures created by knitr chunks as 100% width
   $('.layout-chunk').each(function(i, val) {
     var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
     if ($(this).attr('data-layout') !== "l-body") {
       figures.css('width', '100%');
     } else {
@@ -1743,7 +1777,7 @@ function init_common() {
   // get rid of index.html references in header
   if (window.location.protocol !== "file:") {
     $('.distill-site-header a[href]').each(function(i,val) {
-      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
     });
   }
 
@@ -2172,7 +2206,12 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
   <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
@@ -2189,7 +2228,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"ggraph explorer","description":"A Shiny App for showcasing network visualizations with ggraph","authors":[{"author":"Federica Zoe Ricci","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-13T00:00:00.000+00:00","citationText":"Ricci, 2020"}
+{"title":"ggraph explorer","description":"A Shiny App for showcasing network visualizations with ggraph","authors":[{"author":"Federica Zoe Ricci","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-13T00:00:00.000-08:00","citationText":"Ricci, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2217,6 +2256,9 @@ About
 <a href="https://github.com/federicazoe">
 <i class="fa fa-github" aria-hidden="true"></i>
 </a>
+<a href="https://www.linkedin.com/in/federica-zoe-ricci-she-751180256/">
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
 <a href="mailto:fzricci@uci.edu">
 <i class="fa fa-envelope" aria-hidden="true"></i>
 </a>
@@ -2237,7 +2279,8 @@ About
   <a href="../../projects.html#category:Visualization" class="dt-tag">Visualization</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>A Shiny App for showcasing network visualizations with ggraph</p></p>
+<p><p>A Shiny App for showcasing network visualizations with
+ggraph</p></p>
 </div>
 
 <div class="d-byline">
@@ -2248,13 +2291,41 @@ About
 
 <div class="d-article">
 <h2>
-Network visualization <a href='https://github.com/stats295r-fa20/shiny-group1'><i class='fab fa-wpexplorer'></i></a>
+<a href='https://federica-zoe-ricci.shinyapps.io/ggraph-explorer/'>
+Network visualization <i class='fab fa-wpexplorer'></i> </a>
 </h2>
-<p>This Shiny app, created in collaboration with <a href="https://github.com/rlongjohn">Rachel Longjohn</a> and <a href="https://github.com/wendyrummer13">Wendy Rummerfield</a>, will let you play around with some functions from the package <a href='https://cran.r-project.org/web/packages/ggraph/index.html' target="_blank"> <font face = "courier">ggraph</font> </a> - a package created by <a href="https://github.com/thomasp85">Thomas Lin Pedersen</a> for plotting graphs and networks based on the Grammar of Graphics.</p>
-<p>We have downloaded from the web a dataset of <a href="https://bigdata.duke.edu/projects/social-network-analysis-basics-case-studies-game-thrones-and-national-hockey-league">Game of Thrones</a>, of <a href="https://github.com/efekarakus/potter-network">Harry Potter</a> and of <a href="https://rdrr.io/github/schochastics/networkdata/man/movie_439.html">The Lord of the Rings</a>. The app displays a default network that we have created for each of those datasets and allows the user to modify certain plotting options, such as the layout (i.e. the way that existing nodes and edges are mapped to vertical and horizontal placement on the plot), the size, shape and color of the nodes and of their labels, the style and the width of the edges. The code used to generate the plot is also displayed on a dedicated tab, and updates automatically in response to how the user customizes the plot. Dedicated tabs also allow to see the underlining data tables of nodes and edges.</p>
-<p>The code for the app is available on <a href='https://github.com/stats295r-fa20/shiny-group1' target="_blank"> GitHub</a>.</p>
-<p>The concept of ggraph explorer and its name were inspired by the Shiny app <a href="http://databall.co/shiny/shinyggplot/">ggplot explorer</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p><a href='https://federica-zoe-ricci.shinyapps.io/ggraph-explorer/'>
+This Shiny app </a>, created in collaboration with <a
+href="https://github.com/rlongjohn">Rachel Longjohn</a> and <a
+href="https://github.com/wendyrummer13">Wendy Rummerfield</a>, will let
+you play around with some functions from the package
+<a href='https://cran.r-project.org/web/packages/ggraph/index.html' target="_blank">
+<font face = "courier">ggraph</font> </a> - a package created by <a
+href="https://github.com/thomasp85">Thomas Lin Pedersen</a> for plotting
+graphs and networks based on the Grammar of Graphics.</p>
+<p>We have downloaded from the web a dataset of <a
+href="https://bigdata.duke.edu/projects/social-network-analysis-basics-case-studies-game-thrones-and-national-hockey-league">Game
+of Thrones</a>, of <a
+href="https://github.com/efekarakus/potter-network">Harry Potter</a> and
+of <a
+href="https://rdrr.io/github/schochastics/networkdata/man/movie_439.html">The
+Lord of the Rings</a>. The app displays a default network that we have
+created for each of those datasets and allows the user to modify certain
+plotting options, such as the layout (i.e. the way that existing nodes
+and edges are mapped to vertical and horizontal placement on the plot),
+the size, shape and color of the nodes and of their labels, the style
+and the width of the edges. The code used to generate the plot is also
+displayed on a dedicated tab, and updates automatically in response to
+how the user customizes the plot. Dedicated tabs also allow to see the
+underlining data tables of nodes and edges.</p>
+<p>The code for the app is available on
+<a href='https://github.com/federicazoe/ggraph-explorer' target="_blank">
+GitHub</a>.</p>
+<p>The concept of ggraph explorer and its name were inspired by the
+Shiny app <a href="http://databall.co/shiny/shinyggplot/">ggplot
+explorer</a>.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2268,11 +2339,15 @@ Network visualization <a href='https://github.com/stats295r-fa20/shiny-group1'><
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
-<!--radix_placeholder_navigation_after_body-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--radix_placeholder_navigation_after_body--><html><body>
 <div class="distill-site-nav distill-site-footer">
-  <p>© Copyright 2020 Federica Zoe Ricci • fzricci@uci.edu • Website template is by <a href="https://distill.pub/about/">Distill.pub</a> and <a href="https://www.rstudio.com">RStudio, Inc</a></p>
+<p>© Copyright 2022 Federica Zoe Ricci • fzricci@uci.edu • Website
+template is by <a href="https://distill.pub/about/">Distill.pub</a> and
+<a href="https://www.rstudio.com">RStudio, Inc</a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
+</body></html>
 
 
 </body>
