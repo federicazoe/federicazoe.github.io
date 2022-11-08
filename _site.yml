@@ -20,6 +20,8 @@ navbar:
         href: resume.html
     - icon: fa fa-github
       href: https://github.com/federicazoe
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/federica-zoe-ricci-she-751180256/
     - icon: fa fa-envelope
       href : mailto:fzricci@uci.edu
   search: false
