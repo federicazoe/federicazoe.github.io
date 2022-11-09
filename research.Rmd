@@ -29,12 +29,15 @@ knitr::opts_chunk$set(echo = TRUE)
 #### Statistical methodology
 
 <p> 
-  <i class='fa fa-file-alt'></i> &nbsp; 
+  <a href="https://www.ics.uci.edu/~sudderth/papers/neurips22thinnedSparseGraphs.pdf" target="_blank" title="Paper"> 
+    <i class='fa fa-file-alt'></i> &nbsp; 
+  </a> &nbsp; 
   <a href="https://drive.google.com/file/d/1AYpYQldhowA2ufsABTdaqjxY2NAOEysp/view?usp=sharing" target="_blank" title="Slides"> 
     <i class="fa fa-desktop"></i> 
   </a> &nbsp; 
   <a href="https://drive.google.com/file/d/1qxl88y9D5Zi0tq3gkmXfHz44VnHaSWct/view?usp=sharing" target="_blank" title="Poster"> 
     <i class="fa fa-thumbtack"></i> 
+  <a href="https://neurips.cc/virtual/2022/poster/52902" target="_blank" title="5-min Talk"> <i class='fa fa-video'></i></a>  &nbsp;     
   </a> &nbsp; Thinned random measures for sparse graphs with overlapping communities
   <br>
   **Federica Zoe Ricci**, Michele Guindani, Erik Sudderth
