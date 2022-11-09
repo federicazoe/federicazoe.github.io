@@ -7,5 +7,8 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<a href="cv/my-cv-hyndman.pdf" title="download pdf">
-<img src="cv/my-cv-hyndman.jpg" alt="an image of my curriculum vitae" width="650" align='center'/> </a>
+<a href="cv/my-cv.pdf" title="download pdf">
+    <img src="cv/my-cv-page-1.jpg" alt="an image of my curriculum vitae, page 1" width="650" align='center'/> 
+    <br>
+    <img src="cv/my-cv-page-2.jpg" alt="an image of my curriculum vitae, page 2" width="650" align='center'/> 
+</a>
