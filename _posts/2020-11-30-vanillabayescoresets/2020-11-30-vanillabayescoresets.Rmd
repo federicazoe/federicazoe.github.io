@@ -31,10 +31,10 @@ library(ggplot2)
 
 ## R package
 
-As part of a course project, [Rachel Longjohn](https://github.com/rlongjohn) and I have written an R package named `vanillabayescoresets` for implementing [Bayesian coresets](https://arxiv.org/abs/1710.05053) for binary logistic regression data in R. 
+As part of a course project, [Rachel Longjohn](https://rlongjohn.github.io/) and I have written an R package named `vanillabayescoresets` for implementing [Bayesian coresets](https://arxiv.org/abs/1710.05053) for binary logistic regression data in R. 
 The functions provided in our package are simplified versions (reason for which the _vanilla_) of some of the functions available in Python through the packages [lrcoresets](https://bitbucket.org/jhhuggins/lrcoresets/src/master/coresets/) and [bayesian-coresets](https://github.com/trevorcampbell/bayesian-coresets), created by Jonathan H. Huggins and Trevor Campbell. 
 
-In this article you can read some information about `vanillabayescoresets`. The [package](https://github.com/stats295r-fa20/package-group8) and its [vignette](https://github.com/stats295r-fa20/package-group8/blob/main/vignettes/vanilla-bayesian-coresets.Rmd) are available on GitHub.
+In this article you can read some information about `vanillabayescoresets`. The [package](https://github.com/federicazoe/vanillabayescoresets) and its [vignette](https://federicazoe.github.io/vanillabayescoresets/) are available on GitHub.
 
 
 ### A little background, first!
