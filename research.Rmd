@@ -30,15 +30,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <p> 
   <a href="https://www.ics.uci.edu/~sudderth/papers/neurips22thinnedSparseGraphs.pdf" target="_blank" title="Paper"> 
-    <i class='fa fa-file-alt'></i> &nbsp; 
-  </a> &nbsp; 
+    <i class='fa fa-file-alt'></i> </a> &nbsp; 
   <a href="https://drive.google.com/file/d/1AYpYQldhowA2ufsABTdaqjxY2NAOEysp/view?usp=sharing" target="_blank" title="Slides"> 
-    <i class="fa fa-desktop"></i> 
-  </a> &nbsp; 
+    <i class="fa fa-desktop"></i> </a> &nbsp; 
   <a href="https://drive.google.com/file/d/1qxl88y9D5Zi0tq3gkmXfHz44VnHaSWct/view?usp=sharing" target="_blank" title="Poster"> 
-    <i class="fa fa-thumbtack"></i> 
-  <a href="https://neurips.cc/virtual/2022/poster/52902" target="_blank" title="5-min Talk"> <i class='fa fa-video'></i></a>  &nbsp;     
-  </a> &nbsp; Thinned random measures for sparse graphs with overlapping communities
+    <i class="fa fa-thumbtack"></i> </a> &nbsp; 
+  <a href="https://neurips.cc/virtual/2022/poster/52902" target="_blank" title="5-min Talk"> <i class='fa fa-video'></i></a> &nbsp;
+  Thinned random measures for sparse graphs with overlapping communities
   <br>
   **Federica Zoe Ricci**, Michele Guindani, Erik Sudderth
   <br>
@@ -103,7 +101,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <p> 
   <a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/" target="_blank" title="Blog post"> <i class='fa fa-rss'></i></a>  &nbsp; 
-  <a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/" target="_blank" title="Blog post"> <i class='fa fa-video'></i></a>  &nbsp; Tips and Tools for Asynchronous Class Videos
+  <a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/" target="_blank" title="Video"> <i class='fa fa-video'></i></a>  &nbsp; Tips and Tools for Asynchronous Class Videos
   <br>
   **Federica Zoe Ricci**, Wendy Rummerfield, Mine Dogucu
   <br>
