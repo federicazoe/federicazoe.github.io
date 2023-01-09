@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2195,7 +2202,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2271,28 +2278,21 @@ About
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#research-interests" id="toc-research-interests">Research
-Interests</a></li>
-<li><a href="#refereed-publications"
-id="toc-refereed-publications">Refereed publications</a></li>
-<li><a href="#non-refereed-work" id="toc-non-refereed-work">Non-refereed
-work</a></li>
+<li><a href="#research-interests" id="toc-research-interests">Research Interests</a></li>
+<li><a href="#refereed-publications" id="toc-refereed-publications">Refereed publications</a></li>
+<li><a href="#non-refereed-work" id="toc-non-refereed-work">Non-refereed work</a></li>
 </ul>
 </nav>
 </div>
 <h3 id="research-interests">Research Interests</h3>
 <p>
-I am interested in the development and application of Bayesian
-Nonparametric and machine learning models, especially for clustering,
-analysis of time series and for the modeling of network data. I am
-currently working on:
+I am interested in the development and application of Bayesian Nonparametric and machine learning models, especially for clustering, analysis of time series and for the modeling of network data. I am currently working on:
 <ul>
 <li>
 a model for sparse network data with mixed community memberships;
 </li>
 <li>
-a model for clustering longitudinal data, an application of which is to
-the discovery of subject and brain region clusters using fMRI data;
+a model for clustering longitudinal data, an application of which is to the discovery of subject and brain region clusters using fMRI data;
 </li>
 <li>
 rainfall prediction with regression trees and deep learning methods.
@@ -2300,11 +2300,7 @@ rainfall prediction with regression trees and deep learning methods.
 </ul>
 </p>
 <p>
-In light of my varied background, I am enthusiastic about working with
-researchers in other fields. So far, I have collaborated to academic
-research in the field of Behavioral Sciences. In the future, I would
-love to contribute to data science projects with humanistic and social
-applications.
+In light of my varied background, I am enthusiastic about working with researchers in other fields. So far, I have collaborated to academic research in the field of Behavioral Sciences. In the future, I would love to contribute to data science projects with humanistic and social applications.
 </p>
 <h3 id="refereed-publications">Refereed publications</h3>
 <h4 id="statistical-methodology">Statistical methodology</h4>
@@ -2315,79 +2311,83 @@ applications.
 <i class="fa fa-desktop"></i> </a>  
 <a href="https://drive.google.com/file/d/1qxl88y9D5Zi0tq3gkmXfHz44VnHaSWct/view?usp=sharing" target="_blank" title="Poster">
 <i class="fa fa-thumbtack"></i> </a>  
-<a href="https://neurips.cc/virtual/2022/poster/52902" target="_blank" title="5-min Talk">
-<i class='fa fa-video'></i></a>   Thinned random measures for sparse
-graphs with overlapping communities <br> <strong>Federica Zoe
-Ricci</strong>, Michele Guindani, Erik Sudderth <br> <em>Neural
-Information Processing Systems, 2022 (to appear)</em>
+<a href="https://neurips.cc/virtual/2022/poster/52902" target="_blank" title="5-min Talk"> <i class='fa fa-video'></i></a>  
+<a href="https://github.com/federicazoe/tggp4networks" target="_blank" title="Link to code">
+<i class="fa fa-link"></i> </a>  
+Thinned random measures for sparse graphs with overlapping communities
+<br>
+<strong>Federica Zoe Ricci</strong>, Michele Guindani, Erik Sudderth
+<br>
+<em>Neural Information Processing Systems, 2022 (to appear)</em>
 </p>
-<h4 id="statistics-and-data-science-education">Statistics and data
-science education</h4>
+<h4 id="statistics-and-data-science-education">Statistics and data science education</h4>
 <p>
-<a href="https://iase-web.org/documents/papers/sat2021/IASE2021%20Satellite%20116_RUMMERFIELD.pdf?1649974209" target="_blank" title="Paper">
-<i class='fa fa-file-alt'></i> </a>   Training Graduate Students to
-Teach Statistics and Data Science from a Distance <br> Wendy
-Rummerfield, <strong>Federica Zoe Ricci</strong>, Mine Dogucu <br>
-<em>International Association for Statistical Education Satellite
-Conference, 2021</em>
+<a href="https://iase-web.org/documents/papers/sat2021/IASE2021%20Satellite%20116_RUMMERFIELD.pdf?1649974209" target="_blank" title="Paper"> <i class='fa fa-file-alt'></i> </a>  
+Training Graduate Students to Teach Statistics and Data Science from a Distance
+<br>
+Wendy Rummerfield, <strong>Federica Zoe Ricci</strong>, Mine Dogucu
+<br>
+<em>International Association for Statistical Education Satellite Conference, 2021</em>
 </p>
-<h4 id="collaborations-in-applied-fields">Collaborations in applied
-fields</h4>
+<h4 id="collaborations-in-applied-fields">Collaborations in applied fields</h4>
 <p>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S0195666322000861" target="_blank" title="Paper">
-<i class='fa fa-file-alt'></i> </a>   Is purchasing of vegetable dishes
-affected by organic or local labels? Empirical evidence from a
-university canteen <br> Riccardo Migliavada, <strong>Federica Zoe
-Ricci</strong>, Francesco Denti, Derenik Haghverdian, Luisa Torri <br>
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0195666322000861" target="_blank" title="Paper"> <i class='fa fa-file-alt'></i> </a>  
+Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen
+<br>
+Riccardo Migliavada, <strong>Federica Zoe Ricci</strong>, Francesco Denti, Derenik Haghverdian, Luisa Torri
+<br>
 <em>Appetite, 2022</em>
 </p>
 <p>
-<a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank" title="Paper">
-<i class='fa fa-file-alt'></i></a>   A three-year longitudinal study on
-the use of pre-ordering in a university canteen <br> Riccardo
-Migliavada, <strong>Federica Zoe Ricci</strong>, Luisa Torri <br>
+<a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank" title="Paper"> <i class='fa fa-file-alt'></i></a>  
+A three-year longitudinal study on the use of pre-ordering in a university canteen
+<br>
+Riccardo Migliavada, <strong>Federica Zoe Ricci</strong>, Luisa Torri
+<br>
 <em>Appetite, 2021</em>
 </p>
 <h3 id="non-refereed-work">Non-refereed work</h3>
 <p>
-<a href="https://github.com/federicazoe/gradetools" target="_blank" title="Code">
-<i class='fa fa-code'></i></a>  
-<a href="https://federicazoe.github.io/gradetools/" target="_blank" title="Website">
-<i class='fa fa-globe'></i></a>  
-<a href="https://www.youtube.com/watch?v=ECI4CzkUqak" target="_blank" title="Workshop">
-<i class='fa fa-video'></i></a>   Gradetools: an R package to assist
-with providing grades and personalized feedback to students <br>
-<strong>Federica Zoe Ricci</strong>, Catalina Medina, Mine Dogucu <br> R
-package and workshop, 2022
+<a href="https://github.com/federicazoe/gradetools" target="_blank" title="Code"> <i class='fa fa-code'></i></a>  
+<a href="https://federicazoe.github.io/gradetools/" target="_blank" title="Website"> <i class='fa fa-globe'></i></a>  
+<a href="https://www.youtube.com/watch?v=ECI4CzkUqak" target="_blank" title="Workshop"> <i class='fa fa-video'></i></a>  
+Gradetools: an R package to assist with providing grades and personalized feedback to students
+<br>
+<strong>Federica Zoe Ricci</strong>, Catalina Medina, Mine Dogucu
+<br>
+R package and workshop, 2022
 </p>
 <p>
-<a href="https://www.datapedagogy.com/posts/2021-08-12-assisted-grading-with-gradescope/" target="_blank" title="Blog post">
-<i class='fa fa-rss'></i></a>   Assisted grading with Gradescope <br>
-<strong>Federica Zoe Ricci</strong>, Mine Dogucu <br> Blog post, 2021
+<a href="https://www.datapedagogy.com/posts/2021-08-12-assisted-grading-with-gradescope/" target="_blank" title="Blog post"> <i class='fa fa-rss'></i></a>  
+Assisted grading with Gradescope
+<br>
+<strong>Federica Zoe Ricci</strong>, Mine Dogucu
+<br>
+Blog post, 2021
 </p>
 <p>
-<a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/" target="_blank" title="Blog post">
-<i class='fa fa-rss'></i></a>  
-<a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/" target="_blank" title="Video">
-<i class='fa fa-video'></i></a>   Tips and Tools for Asynchronous Class
-Videos <br> <strong>Federica Zoe Ricci</strong>, Wendy Rummerfield, Mine
-Dogucu <br> Blog post, 2021
+<a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/" target="_blank" title="Blog post"> <i class='fa fa-rss'></i></a>  
+<a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/" target="_blank" title="Video"> <i class='fa fa-video'></i></a>   Tips and Tools for Asynchronous Class Videos
+<br>
+<strong>Federica Zoe Ricci</strong>, Wendy Rummerfield, Mine Dogucu
+<br>
+Blog post, 2021
 </p>
 <p>
-<a href="https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/" target="_blank" title="Blog post">
-<i class='fa fa-rss'></i></a>   Engaging Students in Remote Classes <br>
-Wendy Rummerfield, <strong>Federica Zoe Ricci</strong>, Mine Dogucu <br>
+<a href="https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/" target="_blank" title="Blog post"> <i class='fa fa-rss'></i></a>  
+Engaging Students in Remote Classes
+<br>
+Wendy Rummerfield, <strong>Federica Zoe Ricci</strong>, Mine Dogucu
+<br>
 Blog post, 2020
 </p>
 <p>
-<a href="https://drive.google.com/file/d/17KeGEcfSOPOjSyanZd5gefbXjyU-Z9PL/view?usp=share_link" target="_blank" title="MSc Thesis">
-<i class='fa fa-pen-nib'></i></a>   A Sticky Hierarchical Pitman-Yor
-Process as a Prior for Hidden Markov Models <br> MSc Thesis (advised by
-<a href='http://mypage.unibocconi.it/antoniolijoi/' target="_blank">Antonio
-Lijoi</a>), 2019
+<a href="https://drive.google.com/file/d/17KeGEcfSOPOjSyanZd5gefbXjyU-Z9PL/view?usp=share_link" target="_blank" title="MSc Thesis"> <i class='fa fa-pen-nib'></i></a>  
+A Sticky Hierarchical Pitman-Yor Process as a Prior for Hidden Markov Models
+<br>
+MSc Thesis (advised by <a href='http://mypage.unibocconi.it/antoniolijoi/' target="_blank">Antonio Lijoi</a>), 2019
 </p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

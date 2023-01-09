@@ -529,6 +529,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1601,15 +1602,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2198,7 +2205,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2265,12 +2272,9 @@ About
 <h1>Teaching</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p><q style="font-size:18px"> Preserving the spirit of childood for
-life means preserving the curiosity of learning, the pleasure to
-understand, the desire to communicate. </q> <br>
-<small style="font-size:12px;margin-bottom:0"> (translated from
-<a href='https://en.wikipedia.org/wiki/Bruno_Munari' style="color:black; text-decoration: none">B.
-Munari</a>) </small></p></p>
+<p><p><q style="font-size:18px"> Preserving the spirit of childood for life means preserving the curiosity of learning, the pleasure to understand, the desire to communicate. </q>
+<br>
+<small style="font-size:12px;margin-bottom:0"> (translated from <a href='https://en.wikipedia.org/wiki/Bruno_Munari' style="color:black; text-decoration: none">B. Munari</a>) </small></p></p>
 </div>
 
 
@@ -2287,8 +2291,7 @@ Munari</a>) </small></p></p>
 </nav>
 </div>
 <h3 id="courses">Courses</h3>
-<p>Below is a list of courses that I have been a TA for at UC
-Irvine.</p>
+<p>Below is a list of courses that I have been a TA for at UC Irvine.</p>
 <table>
 <!-- Header -->
 <tr>
@@ -2305,22 +2308,19 @@ Evaluations
 <!-- Stats 68 -->
 <tr>
 <td style="font-size: 11px">
-<a href='https://stats68-sp21.netlify.app/' target="_blank"> Stats 68 -
-Statistical Computing and Exploratory Data Analysis </a>
+<a href='https://stats68-sp21.netlify.app/' target="_blank"> Stats 68 - Statistical Computing and Exploratory Data Analysis </a>
 </td>
 <td style="font-size: 11px">
 Spring 2021
 </td>
 <td style="font-size: 10px; text-align: center;">
-<a href='evaluations/2021_spring_stats_68.pdf' class="icon">
-<i class='fa fa-clipboard'></i> </a>
+<a href='evaluations/2021_spring_stats_68.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>
 </td>
 </tr>
 <!-- Stats 67 -->
 <tr>
 <td style="font-size: 11px">
-<a href='https://www.stats4cs.com/' target="_blank"> Stats 67 -
-Introduction to Probability and Statistics for Computer Science </a>
+<a href='https://www.stats4cs.com/' target="_blank"> Stats 67 - Introduction to Probability and Statistics for Computer Science </a>
 </td>
 <td style="font-size: 11px">
 <p class="compact">
@@ -2338,49 +2338,41 @@ Winter 2020
 </td>
 <td style="font-size: 10px; text-align: center;">
 <p class="compact">
-<a href='evaluations/2021_winter_stats_67_A1_A2.pdf' class="icon">
-<i class='fa fa-clipboard'></i></a>
+<a href='evaluations/2021_winter_stats_67_A1_A2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a>
 </p>
 <p class="compact">
-<a href='evaluations/2020_fall_stats_67_B1_B2.pdf' class="icon">
-<i class='fa fa-clipboard'></i></a>
+<a href='evaluations/2020_fall_stats_67_B1_B2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a>
 </p>
 <p class="compact">
-<a href='evaluations/2020_summer_stats_67.pdf' class="icon">
-<i class='fa fa-clipboard'></i></a>
+<a href='evaluations/2020_summer_stats_67.pdf' class="icon"> <i class='fa fa-clipboard'></i></a>
 </p>
 <p class="compact">
-<a href='evaluations/2020_winter_stats_67_A1_A2.pdf' class="icon">
-<i class='fa fa-clipboard'></i></a>
+<a href='evaluations/2020_winter_stats_67_A1_A2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a>
 </p>
 </td>
 </tr>
 <!-- Stats 8 -->
 <tr>
 <td style="font-size: 11px">
-<a href='http://catalogue.uci.edu/allcourses/stats/' target="_blank">
-Stats 8 - Introduction to Biostatistics </a>
+<a href='http://catalogue.uci.edu/allcourses/stats/' target="_blank"> Stats 8 - Introduction to Biostatistics </a>
 </td>
 <td style="font-size: 11px">
 Fall 2021
 </td>
 <td style="font-size: 10px; text-align: center;">
-<a href='evaluations/2021_fall_stats_8_dis1_dis2.pdf' class="icon">
-<i class='fa fa-clipboard'></i> </a>
+<a href='evaluations/2021_fall_stats_8_dis1_dis2.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>
 </td>
 </tr>
 <!-- Stats 7 -->
 <tr>
 <td style="font-size: 11px">
-<a href='http://catalogue.uci.edu/allcourses/stats/' target="_blank">
-Stats 7 - Basic Statistics </a>
+<a href='http://catalogue.uci.edu/allcourses/stats/' target="_blank"> Stats 7 - Basic Statistics </a>
 </td>
 <td style="font-size: 11px">
 Spring 2020
 </td>
 <td style="font-size: 10px; text-align: center;">
-<a href='evaluations/2020_spring_stats_7_C1_C2.pdf' class="icon">
-<i class='fa fa-clipboard'></i> </a>
+<a href='evaluations/2020_spring_stats_7_C1_C2.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>
 </td>
 </tr>
 </table>
@@ -2436,22 +2428,10 @@ I really enjoy teaching and learning how to improve at teaching.
 As a result of my commitment to teaching:
 </p>
 <ul>
-<li><p>At the end of my first year as a PhD student, I received an
-honorable mention as best TA of the year in the Department of Statistics
-at UCI.</p></li>
-<li><p>In summer 2020, I was selected for the <a
-href="https://dtei.uci.edu/call-for-dtei-graduate-fellows/">Division of
-Teaching Excellence and Innovation Summer Fellowship</a>. As a DTEI
-fellow, I worked with <a
-href="https://mdogucu.ics.uci.edu//index.html">Dr. Dogucu</a> on topics
-relevant to remote-learning, such as <a
-href="https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/">students’
-engagement</a> in remote classes and <a
-href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/">video
-editing</a>.</p></li>
+<li><p>At the end of my first year as a PhD student, I received an honorable mention as best TA of the year in the Department of Statistics at UCI.</p></li>
+<li><p>In summer 2020, I was selected for the <a href="https://dtei.uci.edu/call-for-dtei-graduate-fellows/">Division of Teaching Excellence and Innovation Summer Fellowship</a>. As a DTEI fellow, I worked with <a href="https://mdogucu.ics.uci.edu//index.html">Dr. Dogucu</a> on topics relevant to remote-learning, such as <a href="https://www.datapedagogy.com/posts/2020-09-10-student-engagement-remote/">students’ engagement</a> in remote classes and <a href="https://www.datapedagogy.com/posts/2021-01-08-video-production-tips/">video editing</a>.</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

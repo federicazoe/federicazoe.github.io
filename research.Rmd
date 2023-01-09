@@ -36,6 +36,8 @@ knitr::opts_chunk$set(echo = TRUE)
   <a href="https://drive.google.com/file/d/1qxl88y9D5Zi0tq3gkmXfHz44VnHaSWct/view?usp=sharing" target="_blank" title="Poster"> 
     <i class="fa fa-thumbtack"></i> </a> &nbsp; 
   <a href="https://neurips.cc/virtual/2022/poster/52902" target="_blank" title="5-min Talk"> <i class='fa fa-video'></i></a> &nbsp;
+  <a href="https://github.com/federicazoe/tggp4networks" target="_blank" title="Link to code">
+   <i class="fa fa-link"></i> </a> &nbsp;
   Thinned random measures for sparse graphs with overlapping communities
   <br>
   **Federica Zoe Ricci**, Michele Guindani, Erik Sudderth
