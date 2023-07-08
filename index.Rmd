@@ -10,7 +10,7 @@ site: distill::distill_website
 
 <p> My PhD research focuses on <b> Bayesian Nonparametric models </b> and I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b>. </a> I am interested in the analysis of network and time-series data, in classification tasks and recommendation systems. </p> 
 
-<p> I enjoy working on projects related to <b> statistics and data science education </b> and I have created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science teachers with grading and providing feedback to their students. </p>
+<p> I enjoy working on projects related to <b> statistics and data science education </b> and <a href="https://www.minedogucu.com/"> Mine Dogucu </a> has been my 'honorary advisor' in this direction. I have created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science teachers with grading and providing feedback to their students. </p>
 
 <p> On my way to finding Statistics, I studied Economics with a particular focus on causal inference and microeconometrics. Before that my roots were grounded in humanistic and social subjects: in my BSc, I learned about Anthropology, Sociology and Contemporary Arts, as well as Law, Accounting and Management. </p>
 
