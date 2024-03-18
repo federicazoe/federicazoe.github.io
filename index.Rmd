@@ -4,17 +4,20 @@ description: |
 site: distill::distill_website
 ---
 
-<img src="img/me_paris_medium.jpeg" alt="a picture of myself, dark blond hair with a fringe, wearing a black sweater with pink motifs and smiling in front of an old, blue wooden gate" width="200" align='center'/> 
+<img src="img/me_paris_medium.jpeg" alt="a picture of myself, dark blond hair with a fringe, wearing a black sweater with pink motifs and smiling in front of an old, blue wooden gate" width="600" align='center'/> 
 
-<p> I am a fifth year PhD candidate in the <b> Department of Statistics </b> at the <a href = 'https://www.stat.uci.edu/' target="_blank"> <b> University of California Irvine </b> </a>. </p>
+<br>
+<q style="font-size:18px">  Preserving the spirit of childood for life means preserving the curiosity of learning, the pleasure to understand, the desire to communicate. <small style="font-size:12px;margin-bottom:0"> </q>  (translated from Bruno Munari) </small> 
+<br> 
 
-<p> My PhD research focuses on <b> Bayesian Nonparametric models </b> and I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b>. </a> I am interested in the development of models for the analysis of network and multivariate time-series data. </p> 
 
-<p> I enjoy working on projects related to <b> statistics and data science education </b> and <a href="https://www.minedogucu.com/"> Mine Dogucu </a> has been my 'honorary advisor' in this direction. I have created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science teachers with grading and providing feedback to their students. </p>
+<p> I am a fifth year PhD candidate in the <b> Department of Statistics </b> at the University of California Irvine. I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b> </a>. My PhD research focuses on  the development of Bayesian Nonparametric models for the analysis of network and multivariate time-series data.  </p>
+
+<p> I have also been working on projects related to <b> statistics and data science education </b>, with <a href="https://www.minedogucu.com/"> Mine Dogucu </a> as my 'honorary advisor'. I have created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science teachers with grading and providing feedback to their students. </p>
 
 <p> On my way to finding Statistics, I studied Economics with a focus on causal inference and microeconometrics. Before that, my roots were grounded in humanistic and social subjects: in my BSc, I learned about Anthropology, Sociology and Contemporary Arts, as well as Law, Accounting and Management. </p>
 
-<p> There are many things I enjoy doing, among which hiking and camping, learning about other cultures and cooking. </p>
+<p> There are many things I enjoy doing, among which hiking and traveling, playing board games and cooking. </p>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

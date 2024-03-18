@@ -8,16 +8,8 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Research"
-      href: research.html
-    - text: "Teaching"
-      href: teaching.html      
-    - text: "Projects"
-      href: projects.html
-    - text: "About"
-      menu: 
-      - text: "Resume"
-        href: resume.html
+    - text: "CV"
+      href: cv.html
     - icon: fa fa-github
       href: https://github.com/federicazoe
     - icon: fa fa-linkedin
