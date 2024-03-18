@@ -40,28 +40,35 @@ Division of Teaching Excellence and Innovation pedagogical training [2020]{.date
 
 - **Ricci, F. Z.**, Sudderth, E., Lee, J., Houssain, S., Peters, M., Vannucci, M. & Guindani, M.,  (2024, in preparation) Bayesian temporal biclustering with applications to multi-subject neuroscience studies. 
 
-- **Ricci, F. Z.**, Guindani, M., & Sudderth, E. (2022). Thinned random measures for sparse graphs with overlapping communities. Advances in Neural Information Processing Systems, 35, 38162-38175.
+- **Ricci, F. Z.**, Guindani, M., & Sudderth, E. (2022). Thinned random measures for sparse graphs with overlapping communities. Advances in Neural Information Processing Systems, 35, 38162-38175. 
+<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/f9668d223e713943634dce9c66e8f2c1-Paper-Conference.pdf" target="_blank" title="Paper"> (link) </a> &nbsp; 
 
 ### Statistics education
 
-- Dogucu, M., Demirci, S., Bendekgey, H., **Ricci, F. Z.**, & Medina, C. M. (2024, submitted). Undergraduate data science education: Who has the microphone and what are they saying?. arXiv preprint arXiv:2403.03387.
+- Dogucu, M., Demirci, S., Bendekgey, H., **Ricci, F. Z.**, & Medina, C. M. (2024, submitted). Undergraduate data science education: Who has the microphone and what are they saying?. arXiv preprint arXiv:2403.03387. 
+<a href="https://arxiv.org/abs/2403.03387" target="_blank" title="Paper"> (link) </a>
 
-- **Ricci, F. Z.**, Medina, C. M., & Dogucu, M. (2024, under revision). Designing and implementing an automated grading workflow for providing personalized feedback to open-ended data science assignments. arXiv preprint arXiv:2309.12924.
+- **Ricci, F. Z.**, Medina, C. M., & Dogucu, M. (2024, under revision). Automated grading workflows for providing personalized feedback to open-ended data science assignments. arXiv preprint arXiv:2309.12924. 
+<a href="https://arxiv.org/abs/2309.12924" target="_blank" title="Paper"> (link) </a>
 
 - Rummerfield, W., **Ricci, F. Z.**, & Dogucu, M. (2021). Training graduate students to teach statistics and data science from a distance. In Proceedings of the IASE 2021 Satellite Conference. International Association for Statistical Education.
+<a href="https://iase-web.org/documents/papers/sat2021/IASE2021%20Satellite%20116_RUMMERFIELD.pdf?1649974209" target="_blank" title="Paper"> (link) </a>
 
 ### Applied Statistics
 
-- Migliavada, R., **Ricci, F. Z.**, Denti, F., Haghverdian, D., & Torri, L. (2022). Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen. Appetite, 173, 105995.
+- Migliavada, R., **Ricci, F. Z.**, Denti, F., Haghverdian, D., & Torri, L. (2022). Is purchasing of vegetable dishes affected by organic or local labels? Empirical evidence from a university canteen. Appetite, 173, 105995. 
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0195666322000861" target="_blank" title="Paper"> (link) </a>  &nbsp; 
 
 - Migliavada, R., **Ricci, F. Z.**, & Torri, L. (2021). A three-year longitudinal study on the use of pre-ordering in a university canteen. Appetite, 163, 105203.
+<a href="https://www.sciencedirect.com/science/article/pii/S0195666321001100?casa_token=iul1lGSFkBkAAAAA:Pq3OHZh5qvbIAjUzCKffo4jUq1G6TVwwWovyr8I8EX4qi22Zo4-bIoOaKACHWgF5feuLRZXX" target="_blank" title="Paper"> (link) </a>  &nbsp; 
 
 ### Software
 
 - **Ricci, F. Z.** R package tggp4networks: Modeling of network data with Thinned Generalized Gamma Process. GitHub, March 2023.
+<a href="https://github.com/federicazoe/tggp4networks" target="_blank" title="GitHub Repo"> (link) </i> </a> &nbsp;
 
 - **Ricci, F. Z.**, Medina, C. & Dogucu, M. R package gradetools: Tools to Assist with Providing Grades and Personalized Feedback to Students. GitHub, March 2022.
-
+<a href="https://federicazoe.github.io/gradetools/" target="_blank" title="Vignette"> (link) </i> </a> &nbsp;
 
 ## Presentations
 
@@ -78,6 +85,7 @@ Division of Teaching Excellence and Innovation pedagogical training [2020]{.date
    
 - Thinned random measures for sparse networks with overlapping communities\
   International Day of Women in Statistics and Data Science, 2022.
+  <a href="https://drive.google.com/file/d/1AYpYQldhowA2ufsABTdaqjxY2NAOEysp/view?usp=sharing" target="_blank" title="Slides">  (link) </a> &nbsp;
   
 ### Invited Workshops
 
@@ -95,9 +103,10 @@ Division of Teaching Excellence and Innovation pedagogical training [2020]{.date
 - Dynamic biclustering for multi-subject neuroscience studies \
   Biomedical Data Science Workshop, UC Irvine 2024 (Awarded best poster)
   
-- Modeling sparse graphs with overlapping communities via thinned random measures \
+- Modeling sparse graphs with overlapping communities via thinned random measures  <a href="https://drive.google.com/file/d/1qxl88y9D5Zi0tq3gkmXfHz44VnHaSWct/view?usp=sharing" target="_blank" title="Poster">  (link) </a> &nbsp; \
   Objective Bayes Conference, Santa Cruz 2022 \
-  Meeting of the International Society for Bayesian Analysis, Montreal 2022 (Awarded among best posters in Bayesian Nonparametric category) \
+  Meeting of the International Society for Bayesian Analysis, Montreal 2022 (Awarded among best posters in Bayesian Nonparametric category) 
+ 
   
   
 ### Blog posts
@@ -133,10 +142,13 @@ Writing a data analysis report [2023]{.date} \
 
 ### Teaching Assistant
 
-**University of California Irvine** \
-Teaching Assistant for Stats 7 (Basics Statistics), Stats 8 (Introduction to Biostatistics), Stats 67 (Introduction to Probability and Statistics for Computer Science) and Stats 68 (Statistical Computing and Exploratory Data Analysis) \
-_Student evaluations available on my website: ([link](https://federicazoe.github.io/teaching.html)_)
-  
+**University of California Irvine** [2020 - 2021]{.date} \
+[Evaluations]{.date} \
+Stats 7 (Basics Statistics) [<a href='evaluations/2020_spring_stats_7_C1_C2.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>]{.date}\
+Stats 8 (Introduction to Biostatistics) [<a href='evaluations/2021_fall_stats_8_dis1_dis2.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>]{.date}\
+Stats 67 (Introduction to Probability and Statistics for Computer Science) [<a href='evaluations/2021_winter_stats_67_A1_A2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_fall_stats_67_B1_B2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_summer_stats_67.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_winter_stats_67_A1_A2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a>]{.date}\
+Stats 68 (Statistical Computing and Exploratory Data Analysis) [<a href='evaluations/2021_spring_stats_68.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>]{.date}
+
 ## Service
 
 ### Service to profession 
