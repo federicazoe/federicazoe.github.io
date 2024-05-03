@@ -75,13 +75,16 @@ Division of Teaching Excellence and Innovation pedagogical training [2020]{.date
 ### Invited Talks
 
 - BayesBATS: a program for advancing Bayesian thinking in STEM education \
-  Joint Statistical Meetings, Portland 2024 (forthcoming)
+  Joint Statistical Meetings, Portland, Aug 2024 (forthcoming)
 
 - Bayesian temporal biclustering with applications to multi-subject neuroscience studies  \ 
-  Meeting of the International Society for Bayesian Analysis, Venice 2024 (forthcoming)
+  Meeting of the International Society for Bayesian Analysis, Venice, Jul 2024 (forthcoming)
+  
+-  A Bayesian model for clustering subjects and measurements with application to brain imaging studies\
+  Graduate student showcase of ASA section on Statistics in Imaging, Online, Apr 2024 
   
 - A Bayesian model for clustering subjects and measurements in multivariate time-series  \
-   Colloquium of the Dept. of Mathematics and Statistics, University of West Florida, 2024.
+   Colloquium of the Dept. of Mathematics and Statistics, University of West Florida, Mar 2024.
    
 - Thinned random measures for sparse networks with overlapping communities\
   International Day of Women in Statistics and Data Science, 2022.
@@ -97,8 +100,11 @@ Division of Teaching Excellence and Innovation pedagogical training [2020]{.date
   
 ### Posters
 
+- See you at the Posterior Line: teaching the Bayesian learning paradigm using a racing game \
+ Bayesian Young Statisticians Meeting, Venice, Jun 2024 (forthcoming)
+
 - See you at the Posterior line: using an online racing game for introducing students to Bayesian data analysis \
-  Electronic Conference On Teaching Statistics 2024 (forthcoming)
+  Electronic Conference On Teaching Statistics, Online, Jun 2024 (forthcoming)
   
 - Dynamic biclustering for multi-subject neuroscience studies \
   Biomedical Data Science Workshop, UC Irvine 2024 (Awarded best poster)
@@ -129,6 +135,9 @@ See you at the posterior line: a game-based activity for the Beta-Binomial model
   
 
 ### Workshops
+
+Writing your honors thesis [2024]{.date} \    
+  Workshop for ICS honors-program undergraduates at UC Irvine  ([link](https://github.com/federicazoe/writing-ws-honors-sp24))\
 
 Quarto for writing data analysis reports and academic articles [2023]{.date} \    
   Workshop for graduate students at UC Irvine  ([link](https://github.com/federicazoe/brownbag-quarto-doc/))\
@@ -169,7 +178,7 @@ Stats 68 (Statistical Computing and Exploratory Data Analysis) [<a href='evaluat
 
 ## Awards and Fellowships
 
-- Recipient of the Hasso-Plattner Institute for Machine Learning and Data Science Fellowship at UC Irvine (2022-2025)
+- Recipient of Hasso-Plattner Institute for Machine Learning and Data Science Fellowship at UC Irvine (2022-2025)
 <!--- Travel award, Meeting of the International Society for Bayesian Analysis, Montreal (2022)
 - Travel award, Objective Bayes Conference, Santa Cruz (2022) -->
 - Recipient of Division of Teaching Excellence and Innovation Summer Fellowship (2020)
