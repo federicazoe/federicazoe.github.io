@@ -32,6 +32,7 @@ Bachelor of Science - Economics and Management for Arts  (GPA: 4.0) [2012 - 2015
 
 **University of California Irvine** \
 Mentoring Excellence Program [2023]{.date} \
+CITI Basic HRP Course for Social and Behavioral Investigators [2023]{.date} \
 Division of Teaching Excellence and Innovation pedagogical training [2020]{.date}
 
 ## Publications
@@ -155,7 +156,7 @@ Writing a data analysis report [2023]{.date} \
 [Evaluations]{.date} \
 Stats 7 (Basics Statistics) [<a href='evaluations/2020_spring_stats_7_C1_C2.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>]{.date}\
 Stats 8 (Introduction to Biostatistics) [<a href='evaluations/2021_fall_stats_8_dis1_dis2.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>]{.date}\
-Stats 67 (Introduction to Probability and Statistics for Computer Science) [<a href='evaluations/2021_winter_stats_67_A1_A2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_fall_stats_67_B1_B2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_summer_stats_67.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_winter_stats_67_A1_A2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a>]{.date}\
+Stats 67 (Introduction to Probability and Statistics for Computer Science) [<a href='evaluations/2021_winter_stats_67_A1_A2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_fall_stats_67_B1_B2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_summer_stats_67.pdf' class="icon"> <i class='fa fa-clipboard'></i></a> <a href='evaluations/2020_winter_stats_67_B1_B2.pdf' class="icon"> <i class='fa fa-clipboard'></i></a>]{.date}\
 Stats 68 (Statistical Computing and Exploratory Data Analysis) [<a href='evaluations/2021_spring_stats_68.pdf' class="icon"> <i class='fa fa-clipboard'></i> </a>]{.date}
 
 ## Service
