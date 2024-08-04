@@ -1,20 +1,19 @@
 ---
 title: "Welcome"
-description: |
 site: distill::distill_website
 ---
 
 <img src="img/me_paris_medium.jpeg" alt="a picture of myself, dark blond hair with a fringe, wearing a black sweater with pink motifs and smiling in front of an old, blue wooden gate" width="400" align='center'/> 
 
-<q style="font-size:18px">  Preserving the spirit of childood for life means preserving the curiosity of learning, the pleasure to understand, the desire to communicate. <small style="font-size:12px;margin-bottom:0"> </q>  (translated from Bruno Munari) </small> 
+<q style="font-size:18px; margin:0">  Preserving the spirit of childood for life means preserving the curiosity of learning, the pleasure to understand, the desire to communicate. <small style="font-size:12px;margin-bottom:0"> </q>  (translated from Bruno Munari) </small> 
 <br> 
 
-<p> I am a PhD candidate in <b> Statistics </b> at the University of California Irvine. I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b> </a>. My PhD research focuses on developing Bayesian models for the analysis of network and multivariate time-series data.  </p>
+<p style="margin:1"> I am a PhD candidate in <b> Statistics </b> at the University of California Irvine. Jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b> </a>. My research focuses on developing Bayesian models for the analysis of network and for clustering multivariate time-series data.  </p>
 
 
-<p> I also work on projects in <b> statistics and data science education, </b> with <a href="https://www.minedogucu.com/"> Mine Dogucu </a> as my 'honorary advisor'. I created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science instructors with providing grades and feedback to their students. </p>
+<p style="margin:0"> I also work on projects in <b> statistics and data science education, </b> with <a href="https://www.minedogucu.com/"> Mine Dogucu </a> as my 'honorary advisor'. I created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science instructors with providing grades and feedback to their students. </p>
 
-## News
+### News 
 
 - August 2024. I am attending [JSM](https://ww2.amstat.org/meetings/jsm/2024/index.cfm), where I am presenting on the [Bayes BATS](https://www.stat.uci.edu/bayes-bats/) program and participating in the [Preparing to Teach](https://preparingtoteach.org/) workshop.
 
