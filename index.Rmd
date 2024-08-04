@@ -1,29 +1,30 @@
 ---
-title: "Welcome."
+title: "Welcome"
 description: |
 site: distill::distill_website
 ---
 
-<img src="img/me_paris_medium.jpeg" alt="a picture of myself, dark blond hair with a fringe, wearing a black sweater with pink motifs and smiling in front of an old, blue wooden gate" width="600" align='center'/> 
+<img src="img/me_paris_medium.jpeg" alt="a picture of myself, dark blond hair with a fringe, wearing a black sweater with pink motifs and smiling in front of an old, blue wooden gate" width="400" align='center'/> 
 
-<br>
 <q style="font-size:18px">  Preserving the spirit of childood for life means preserving the curiosity of learning, the pleasure to understand, the desire to communicate. <small style="font-size:12px;margin-bottom:0"> </q>  (translated from Bruno Munari) </small> 
 <br> 
 
+<p> I am a PhD candidate in <b> Statistics </b> at the University of California Irvine. I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b> </a>. My PhD research focuses on developing Bayesian models for the analysis of network and multivariate time-series data.  </p>
 
-<p> I am a fifth year PhD candidate in the <b> Department of Statistics </b> at the University of California Irvine. I am jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b> </a>. My PhD research focuses on  the development of Bayesian Nonparametric models for the analysis of network and multivariate time-series data.  </p>
 
-<p> I have also been working on projects related to <b> statistics and data science education </b>, with <a href="https://www.minedogucu.com/"> Mine Dogucu </a> as my 'honorary advisor'. I have created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science teachers with grading and providing feedback to their students. </p>
+<p> I also work on projects in <b> statistics and data science education, </b> with <a href="https://www.minedogucu.com/"> Mine Dogucu </a> as my 'honorary advisor'. I created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science instructors with providing grades and feedback to their students. </p>
 
-<p> On my way to finding Statistics, I studied Economics with a focus on causal inference and microeconometrics. Before that, my roots were grounded in humanistic and social subjects: in my BSc, I learned about Anthropology, Sociology and Contemporary Arts, as well as Law, Accounting and Management. </p>
+## News
 
-<p> There are many things I enjoy doing, among which hiking and traveling, playing board games and cooking. </p>
+- August 2024. I am attending [JSM](https://ww2.amstat.org/meetings/jsm/2024/index.cfm), where I am presenting on the [Bayes BATS](https://www.stat.uci.edu/bayes-bats/) program and participating in the [Preparing to Teach](https://preparingtoteach.org/) workshop.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+- July 2024. I am mentoring a team of four undergraduate students participating in the [ISI-BUDS](https://www.stat.uci.edu/isi-buds/) program, together with [Tetyana Vasylyeva](https://publichealth.uci.edu/faculty/vasylyeva-tetyana/) and [Volodymyr Minin](https://vnminin.github.io/).
 
-# When the website will be ready, take a look at how to publish to GitHub Pages:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
+- July 2024. I am giving an invited talk at the world meeting of the [International Society for Bayesian Analysis](https://bayesian.org/), about my research on [Bayesian temporal biclustering with applications to multi-subject neuroscience studies](https://arxiv.org/abs/2406.17131).
 
-```
+- July 2024. Our paper on [Automated grading workflows for providing personalized feedback to open-ended data science assignments](https://escholarship.org/uc/item/8ck097s5) has been published on the journal Technology Education in Statistics Education.
+
+- June 2024. Our breakout session [Building Data Science Education Research Plan for Teacher-Scholars](https://mdogucu.github.io/eCOTS-2024/#/title-slide) was voted the hot-topic of the day at [eCOTS](https://www.causeweb.org/cause/ecots/ecots24/program/breakout/building-data-science-education-research-plan-for-teacher-scholars).
+
+- June 2024. I am presenting a poster about teaching Bayesian modeling using an online racing game at [eCOTS](https://www.causeweb.org/cause/ecots/ecots24/program/posters/19) and at [BAYSM](https://drive.google.com/drive/search?q=bayes%20games).
 
