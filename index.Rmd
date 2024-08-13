@@ -8,10 +8,10 @@ site: distill::distill_website
 <q style="font-size:18px; margin:0">  Preserving the spirit of childood for life means preserving the curiosity of learning, the pleasure to understand, the desire to communicate. <small style="font-size:12px;margin-bottom:0"> </q>  (translated from Bruno Munari) </small> 
 <br> 
 
-<p style="margin:1"> I am a PhD candidate in <b> Statistics </b> at the University of California Irvine. Jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b> </a>. My research focuses on developing Bayesian models for the analysis of network and for clustering multivariate time-series data.  </p>
+<p style="margin:1"> I am a PhD candidate in <b> Statistics </b> at the University of California Irvine, jointly advised by <a href="https://www.ics.uci.edu/~sudderth/"> <b> Erik Sudderth </b> </a> and <a href ="https://www.micheleguindani.info/" > <b> Michele Guindani </b> </a>. My research focuses on developing Bayesian models for the analysis of network and for clustering multivariate time-series data.  </p>
 
 
-<p style="margin:0"> I also work on projects in <b> statistics and data science education, </b> with <a href="https://www.minedogucu.com/"> Mine Dogucu </a> as my 'honorary advisor'. I created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science instructors with providing grades and feedback to their students. </p>
+<p style="margin:0"> I also work on projects in <b> statistics and data science education, </b> with <a href="https://www.minedogucu.com/"> Mine Dogucu </a> as my 'honorary advisor'. I created the R package <a href="https://federicazoe.github.io/gradetools/"> gradetools </a> to assist data science instructors with providing grades and feedback to their students. I developed [an activity](https://federicazoe.github.io/bayes-games/) for teaching Bayesian modeling via gamification, teamwork and data collection. </p>
 
 ### News 
 
@@ -25,5 +25,5 @@ site: distill::distill_website
 
 - June 2024. Our breakout session [Building Data Science Education Research Plan for Teacher-Scholars](https://mdogucu.github.io/eCOTS-2024/#/title-slide) was voted the hot-topic of the day at [eCOTS](https://www.causeweb.org/cause/ecots/ecots24/program/breakout/building-data-science-education-research-plan-for-teacher-scholars).
 
-- June 2024. I am presenting a poster about teaching Bayesian modeling using an online racing game at [eCOTS](https://www.causeweb.org/cause/ecots/ecots24/program/posters/19) and at [BAYSM](https://drive.google.com/drive/search?q=bayes%20games).
+- June 2024. I am presenting a poster about teaching Bayesian modeling using an online racing game at [eCOTS](https://www.causeweb.org/cause/ecots/ecots24/program/posters/19) and at [BAYSM](https://drive.google.com/drive/search?q=bayes%20games). Check out the activity [here](https://federicazoe.github.io/bayes-games/)!
 
