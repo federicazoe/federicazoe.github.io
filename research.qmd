@@ -75,6 +75,8 @@ My research in statistics and data science education aims to support instructors
 -   [Workshop](https://github.com/federicazoe/gradetools-uscots2023?tab=readme-ov-file){target="_blank"} - *USCOTS 2023*
 
 -   [Manuscript](https://escholarship.org/uc/item/8ck097s5){target="_blank"} - *TISE, 2024*
+
+-   [Video](https://www.youtube.com/watch?v=ECI4CzkUqak&t=19s){target="_blank"} - YouTube, 2022
 :::
 :::
 
