@@ -1,0 +1,145 @@
+---
+title: "Research"
+editor: 
+  mode: source
+---
+
+I work on methodological, educational and applied research in statistics and data science. <br> Learn more about my research interests and projects below.
+
+::: panel-tabset
+## Statistical methodology
+
+My methodological research lies at the intersection of Bayesian statistics and machine learning. I have worked on Bayesian nonparametric models and efficient posterior inference for network analysis and probabilistic clustering. I strive to illustrate the components of statistical models by creating visualizations: check out my papers, posters and presentations.
+
+##### Statistical modeling of sparse networks with overlapping communities
+
+::: columns
+::: {.column width="30%"}
+![](files/research/methodology/network_communities.png){fig-align="left" width="180"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="66%"}
+<br>
+
+-   [Manuscript](https://proceedings.neurips.cc/paper_files/paper/2022/hash/f9668d223e713943634dce9c66e8f2c1-Abstract-Conference.html){target="_blank"} - *NeurIPS 2022*
+
+-   [Poster](files/research/methodology/tggp-poster-file.pdf){target="_blank"} - *ISBA 2022*
+
+-   [Presentation](files/research/methodology/tggp-presentation-file.pdf){target="_blank"} - *International Day of Women in Statistics and Data Science 2022*
+:::
+:::
+
+##### Probabilistic frameworks for temporal biclustering
+
+::: columns
+::: {.column width="30%"}
+![](files/research/methodology/temporal_biclustering.png){fig-align="left" width="180"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="66%"}
+<br>
+
+-   [Preprint](https://arxiv.org/abs/2406.17131){target="_blank"} - *arXiv*
+
+-   [Poster](files/research/methodology/mmtb-poster-file.pdf){target="_blank"} - *Biostatistics Workshop \@ UCI 2024*
+
+-   [Presentation](files/research/methodology/mmtb-presentation-file.pdf){target="_blank"} - *ISBA 2024*
+:::
+:::
+
+## Statistics education
+
+My research in statistics and data science education aims to support instructors with providing effective qualitative feedback to students, study the benefits of learning statistics with self-collected data and promote teaching of Bayesian methodologies.
+
+##### Automated grading workflows for formative feedback
+
+::: columns
+::: {.column width="30%"}
+![](files/research/education/gradetools-logo.png){fig-align="left" width="180"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="66%"}
+<br>
+
+-   [Package](https://federicazoe.github.io/gradetools/){target="_blank"} - GitHub, 2022
+
+-   [Workshop](https://github.com/federicazoe/gradetools-uscots2023?tab=readme-ov-file){target="_blank"} - *USCOTS 2023*
+
+-   [Manuscript](https://escholarship.org/uc/item/8ck097s5){target="_blank"} - *TISE, 2024*
+:::
+:::
+
+##### See you at the Posterior Line! Learning Bayesian statistics with an online racing game {#see}
+
+::: columns
+::: {.column width="30%"}
+![](files/research/education/posterior-line-fig.png){fig-align="left" width="200"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="66%"}
+<br>
+
+-   [Material and Video](https://federicazoe.github.io/bayes-games/){target="_blank"}
+
+-   [Poster](files/research/education/posterior-line-poster.pdf){target="_blank"} - *BAYSM 2024*
+
+-   [Slides](https://federicazoe.github.io/bayes-games/slides/ecots24-slides.html){target="_blank"} - *eCOTS 2024*
+:::
+:::
+
+##### Advancing Bayesian Thinking in STEM
+
+::: columns
+::: {.column width="30%"}
+![](files/research/education/bayes-bats-pic.png){fig-align="left" width="200" style="margin-top: 5px;"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="66%"}
+<br>
+
+-   [Presentation](files/research/education/jsm-federica.pdf){target="_blank"} - *JSM 2024*
+:::
+:::
+
+## Applied statistics
+
+I enjoy supporting applied scientists with the formulation of their research goals into formal statistical questions, the identification of appropriate statistical methods and the implementation of statistical analyses. I have collaborated with scientists in behavioral nutrition to study how individuals can be nudged towards healthier and sustainable food choices.
+
+##### Behavioral interventions to promote healthy and sustainable diets
+
+::: columns
+::: {.column width="40%"}
+![](files/research/applied/study-design-fig.png){fig-align="left" width="300" style="margin-top: 5px;"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="56%"}
+<br>
+
+**Impact of organic and local labels on vegetable consumption**
+
+-   [Manuscript](https://www.sciencedirect.com/science/article/pii/S0195666322000861) - *Appetite, 2022*
+
+**Factors contributing to the use of pre-ordering systems**
+
+-   [Manuscript](https://www.sciencedirect.com/science/article/pii/S0195666321001100) - *Appetite, 2021*
+:::
+:::
+:::

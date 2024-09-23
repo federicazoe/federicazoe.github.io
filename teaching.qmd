@@ -1,0 +1,95 @@
+---
+title: "Teaching"
+---
+
+::: panel-tabset
+## Teaching assistant
+
+::: columns
+::: {.column width="10%"}
+<br>
+
+{{< fa person-chalkboard size=5x >}}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="85%"}
+I have assisted with teaching introductory and intermediate statistics classes to over 200 students at UC Irvine. My work involved creating course material (formative and summative assessments) and teaching students during weekly discussion sessions, office hours and in online forums (e.g. Piazza).
+
+My commitment to teaching was recognized with a honorary mention for the Outstanding Teaching Assistant Award by the Department of Statistics in 2020.
+:::
+:::
+
++-------------+-----------------------------------------------------------------+---------------------------+
+| Course code | Course name                                                     | Academic Term             |
++=============+=================================================================+===========================+
+| STATS 8     | Introduction to Biological Statistics                           | Fall 2021                 |
++-------------+-----------------------------------------------------------------+---------------------------+
+| STATS 68    | Statistical Computing and Exploratory Data Analysis             | Spring 2021               |
++-------------+-----------------------------------------------------------------+---------------------------+
+| STATS 67    | Introduction to Probability and Statistics for Computer Science | Winter 2021               |
+|             |                                                                 |                           |
+|             |                                                                 | Summer, Winter, Fall 2020 |
++-------------+-----------------------------------------------------------------+---------------------------+
+| STATS 7     | Basic Statistics                                                | Spring 2020               |
++-------------+-----------------------------------------------------------------+---------------------------+
+
+## Scientific communication
+
+::: columns
+::: {.column width="10%"}
+<br> {{< fa file-pen size=5x >}}
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="85%"}
+Every modern individual must develop the skills to understand and recognize good scientific communication. Students in STEM also need to learn how to communicate effectively so that they can make an impact with their work. Practicing communication also improves one's ability to formalize and develop their ideas.
+
+I have created and taught workshops on scientific writing for undergraduate students in statistics, data science, informatics and computer science, and for graduate statistics students. I look forward to work more on this!
+:::
+:::
+
++--------------------------------------------------------------------------------------------------------------------+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| Audience                                                                                                           | Dates             | Workshop Material                                                                                                                |
++====================================================================================================================+===================+==================================================================================================================================+
+| Undergraduate research program in biostatistics ([ISI-BUDS](https://isi-buds.github.io/website/){target="_blank"}) | Jul 22, 2024      | -   [Slides](https://isi-buds.github.io/writing-workshop-2024/slides-2024.html#/writing-a-data-analysis-report){target="_blank"} |
+|                                                                                                                    |                   |                                                                                                                                  |
+|                                                                                                                    | Aug 3, 2023       | -   [Supporting material](https://github.com/federicazoe/isibuds23-workshop-support){target="_blank"}                            |
++--------------------------------------------------------------------------------------------------------------------+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| Undergraduate honors class - informatics, computer science and data science majors                                 | May 1 and 3, 2024 | -   [Slides (part 1)](https://federicazoe.github.io/writing-ws-honors-sp24/slides-part-1){target="_blank"}                       |
+|                                                                                                                    |                   |                                                                                                                                  |
+|                                                                                                                    |                   | -   [Slides (part 2)](https://federicazoe.github.io/writing-ws-honors-sp24/slides-part-2){target="_blank"}                       |
++--------------------------------------------------------------------------------------------------------------------+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| Graduate students in statistics                                                                                    | Jun 8, 2023       | -   [Slides on Quarto Documents](https://federicazoe.github.io/brownbag-quarto-doc/slides/slides.html#/quarto-documents)         |
++--------------------------------------------------------------------------------------------------------------------+-------------------+----------------------------------------------------------------------------------------------------------------------------------+
+
+## Gamification
+
+Fun learning activities can be especially engaging and memorable[^1][^2]. I have started to create game-based activities for teaching Bayesian statistics and assessing their effectiveness (more about this under Research/Statistics Education). Here you can find links to the resources I created. If you are interested to work more on this with me, please reach out!
+
+##### See you at the Posterior Line! Learning Bayesian statistics with an online racing game {#see}
+
+::: {.columns .v-center-container}
+::: {.column width="75%"}
+![](files/teaching/posterior-line-diagram.png){fig-align="left" width="550"}
+:::
+
+::: {.column width="20%"}
+-   [Material and Video](https://federicazoe.github.io/bayes-games/){target="_blank"}
+:::
+:::
+
+##### Other resources
+
+-   More [games](https://www.stat2games.sites.grinnell.edu/){target="_blank"} and game-based [learning activities](https://stat2labs.sites.grinnell.edu/){target="_blank"} for teaching statistics by Dr. Shonda Kuiper and Dr. Rodney X. Sturdivant.
+:::
+
+[^1]: Lesser, Lawrence M., Dennis K. Pearl, and John J. Weber III. "Assessing fun items' effectiveness in increasing learning of college introductory statistics students: Results of a randomized experiment." *Journal of Statistics Education* 24.2 (2016): 54-62.
+
+[^2]: Kuiper, Shonda, and Rodney X. Sturdivant. "Using online game-based simulations to strengthen students’ understanding of practical statistical issues in real-world data analysis." *The American Statistician* 69.4 (2015): 354-361.
+
+##### 

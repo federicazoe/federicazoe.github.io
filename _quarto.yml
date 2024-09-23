@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+  
+# Meta
+author-meta: "Federica Zoe Ricci"
+
+website:
+  title: "Federica Zoe Ricci"
+  navbar:
+    background: "#175e59"
+    foreground: "light"
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Teaching
+        href: teaching.qmd
+      - text: CV
+        href: files/navbar/cv-federica-zoe-ricci.pdf
+        target: _blank          
+    right:
+      - icon: envelope
+        href: mailto:fzricci@uci.edu 
+        target: _blank    
+      - text: "{{< ai google-scholar >}}"
+        href: https://scholar.google.com/citations?user=z3cnaS4AAAAJ&hl=en
+        target: _blank         
+      - icon: github
+        href: https://github.com/federicazoe
+        target: _blank
+    page-footer: 
+      left: "[Federica Zoe Ricci](http://federicazoe.github.io) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    
+    reader-mode: true
+
+
+
+format:
+  html:
+    theme: [cosmo]
+    toc: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+
+
+
