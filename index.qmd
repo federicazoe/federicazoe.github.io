@@ -23,7 +23,7 @@ editor:
 ---
 
 ::: {#fede-heading}
-<p style="font-size:11px; font-style:italic; color:#2a3733;">
+<p style="font-size:12px; font-style:italic; color:#2a3733;">
 Preserving the spirit of childhood for life means preserving the curiosity of learning, the pleasure to understand, the desire to communicate. (Bruno Munari)
 </p>
 
