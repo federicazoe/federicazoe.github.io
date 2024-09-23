@@ -39,7 +39,7 @@ website:
 
 format:
   html:
-    theme: [cosmo]
+    theme: [simplex, style.scss]
     toc: false
     link-external-newwindow: true
     email-obfuscation: javascript
