@@ -9,7 +9,8 @@ title: "Teaching"
 ::: {.column width="10%"}
 <br>
 
-{{< fa person-chalkboard size=5x >}}
+<i class="fa-solid fa-person-chalkboard" style="font-size: 5vw;"></i>
+
 :::
 
 ::: {.column width="4%"}
