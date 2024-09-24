@@ -7,6 +7,8 @@ author-meta: "Federica Zoe Ricci"
 
 website:
   title: "Federica Zoe Ricci"
+  open-graph: true
+  site-url: "https://federicazoe.github.io/"
   navbar:
     background: "#175e59"
     foreground: "light"

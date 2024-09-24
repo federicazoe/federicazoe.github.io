@@ -1,7 +1,7 @@
 ---
 title: 'Federica Zoe Ricci'
 subtitle:  '<p>  PhD Candidate, Statistics <br> University of California Irvine </p>'
-image: files/index/federica-zoe-ricci.png
+image: "files/index/federica-zoe-ricci.png"
 
 about:
   id: fede-heading
