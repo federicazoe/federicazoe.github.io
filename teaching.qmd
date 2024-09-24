@@ -9,7 +9,7 @@ title: "Teaching"
 ::: {.column width="10%"}
 <br>
 
-<i class="fa-solid fa-person-chalkboard" style="font-size: 5vw;"></i>
+<i class="fa-solid fa-person-chalkboard" style="font-size: 6vw;"></i>
 
 :::
 
@@ -41,7 +41,8 @@ My commitment to teaching was recognized with a honorary mention for the Outstan
 
 ::: columns
 ::: {.column width="10%"}
-<br> {{< fa file-pen size=5x >}}
+<br> 
+<i class="fa-solid fa-file-pen" style="font-size: 6vw;"></i>
 :::
 
 ::: {.column width="3%"}
