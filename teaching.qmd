@@ -2,15 +2,18 @@
 title: "Teaching"
 ---
 
+```{=html}
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+```
+
+
 ::: panel-tabset
 ## Teaching assistant
 
 ::: columns
 ::: {.column width="10%"}
-<br>
-
-<i class="fa-solid fa-person-chalkboard" style="font-size: 6vw;"></i>
-
+<br> <i class="fa-solid fa-person-chalkboard" style="font-size: 5vw;"></i>
 :::
 
 ::: {.column width="4%"}
@@ -23,26 +26,25 @@ My commitment to teaching was recognized with a honorary mention for the Outstan
 :::
 :::
 
-+-------------+-----------------------------------------------------------------+---------------------------+
-| Course code | Course name                                                     | Academic Term             |
-+=============+=================================================================+===========================+
-| STATS 8     | Introduction to Biological Statistics                           | Fall 2021                 |
-+-------------+-----------------------------------------------------------------+---------------------------+
-| STATS 68    | Statistical Computing and Exploratory Data Analysis             | Spring 2021               |
-+-------------+-----------------------------------------------------------------+---------------------------+
-| STATS 67    | Introduction to Probability and Statistics for Computer Science | Winter 2021               |
-|             |                                                                 |                           |
-|             |                                                                 | Summer, Winter, Fall 2020 |
-+-------------+-----------------------------------------------------------------+---------------------------+
-| STATS 7     | Basic Statistics                                                | Spring 2020               |
-+-------------+-----------------------------------------------------------------+---------------------------+
++--------------+-----------------------------------------------------------------+---------------------------+
+| Course code  | Course name                                                     | Academic Term             |
++==============+=================================================================+===========================+
+| STATS 8      | Introduction to Biological Statistics                           | Fall 2021                 |
++--------------+-----------------------------------------------------------------+---------------------------+
+| STATS 68     | Statistical Computing and Exploratory Data Analysis             | Spring 2021               |
++--------------+-----------------------------------------------------------------+---------------------------+
+| STATS 67     | Introduction to Probability and Statistics for Computer Science | Winter 2021               |
+|              |                                                                 |                           |
+|              |                                                                 | Summer, Winter, Fall 2020 |
++--------------+-----------------------------------------------------------------+---------------------------+
+| STATS 7      | Basic Statistics                                                | Spring 2020               |
++--------------+-----------------------------------------------------------------+---------------------------+
 
 ## Scientific communication
 
 ::: columns
 ::: {.column width="10%"}
-<br> 
-<i class="fa-solid fa-file-pen" style="font-size: 6vw;"></i>
+<br> <i class="fa-solid fa-file-pen" style="font-size: 6vw;"></i>
 :::
 
 ::: {.column width="3%"}
