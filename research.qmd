@@ -9,7 +9,7 @@ I work on methodological, educational and applied research in statistics and dat
 ::: panel-tabset
 ## Statistical methodology
 
-My methodological research lies at the intersection of Bayesian statistics and machine learning. I have worked on Bayesian nonparametric models and efficient posterior inference for network analysis and probabilistic clustering. I strive to illustrate the components of statistical models by creating visualizations: check out my papers, posters and presentations.
+My methodological research lies at the intersection of Bayesian statistics and machine learning. I have worked on Bayesian nonparametric models and efficient posterior inference for network analysis and probabilistic clustering. Here you can find some of my papers, posters and presentations.
 
 ##### Statistical modeling of sparse networks with overlapping communities
 
